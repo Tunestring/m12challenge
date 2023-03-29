@@ -1,13 +1,11 @@
+// Definitions and Dependencies
 const mysql = require('mysql2');
 const inquirer = require('inquirer');
+const sqlDb = require('./db/sqlDb');
 
-
-const sqlDb = mysql.createConnection(
-    {
-      host: 'localhost',
-      user: 'root',
-      password: 'password',
-      database: 'staff_db'
-    },
-    console.log(`Connected! (staff_db)`)
-);
+// Server Start after sqlDb connection
+db.connect(err => {
+  if (err) throw err;
+  console.log('Database connected!');
+  employee_tracker();
+});
