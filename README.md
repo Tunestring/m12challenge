@@ -23,6 +23,11 @@ Enter the following in your terminal to install the dependencies:
 ```
 npm i inquirer@8.2.4 console.table mysql2
 ```
+To initialize the application open your terminal, CD to index.js in the m12challenge folder and type the following:
+```
+node index.js
+```
+
 ## Usage
 
 This project can be used as a way to create a command line visualisation of employees, salaraies, departments and managers..
