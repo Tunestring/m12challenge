@@ -25,7 +25,7 @@ npm i inquirer@8.2.4 console.table mysql2
 ```
 ## Usage
 
-This project can be used as a way to quickly create a README.md for your project.
+This project can be used as a way to create a command line visualisation of employees, salaraies, departments and managers..
 Here is a link that demonstrates the code as well as the finished product.
 
 [Youtube link to working project](https://www.youtube.com/watch?v=lV1xsT-yjgI)
