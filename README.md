@@ -52,8 +52,6 @@ No tests written for this project.
 
 ## Questions
 
-Questions?
-
 Any further questions e-mail me: nate.k.long@gmail.com
 
 Check out my other projects: https://www.github.com/Tunestring
