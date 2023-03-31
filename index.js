@@ -57,18 +57,21 @@ function employee_tracker() {
     })
     .catch((error) => {
       if (error) {
-       console.log(error)
+        console.log(error);
       }
     });
 }
+
 function exitApplication() {
   console.log("Goodbye!");
   process.exit();
 }
+
 function returnToMainMenu() {
   console.log("...Returning to main menu...");
   employee_tracker();
 }
+
 function viewAllDepartments() {
   db.execute("select * FROM department", (err, res) => {
     console.table(res);
@@ -88,6 +91,7 @@ function viewAllRoles() {
     returnToMainMenu();
   });
 }
+
 function viewAllEmployees() {
   const query = `SELECT 
   employee.id AS "Employee ID", 
@@ -108,6 +112,7 @@ function viewAllEmployees() {
     returnToMainMenu();
   });
 }
+
 function addDepartment() {
   inquirer
     .prompt([
@@ -131,10 +136,11 @@ function addDepartment() {
     })
     .catch((error) => {
       if (error) {
-        console.log(error)
-      } 
+        console.log(error);
+      }
     });
 }
+
 function addRole() {
   inquirer
     .prompt([
@@ -174,10 +180,11 @@ function addRole() {
     })
     .catch((error) => {
       if (error) {
-      console.log(error)
+        console.log(error);
       }
     });
 }
+
 function addEmployee() {
   inquirer
     .prompt([
@@ -210,7 +217,8 @@ function addEmployee() {
         message: "Please select the manager of the new employee:",
         choices: [
           { value: 1, name: "John Doe" },
-          { value: 2, name: "Jane Smith" },
+          { value: 2, name: "Tom Williams" },
+          { value: 3, name: "Sarah Johnson" },
           { value: null, name: "None" },
         ],
       },
@@ -235,10 +243,11 @@ function addEmployee() {
     })
     .catch((error) => {
       if (error) {
-       console.log(error)
+        console.log(error);
       }
     });
 }
+
 function updateEmployee() {
   inquirer
     .prompt([
@@ -289,7 +298,7 @@ function updateEmployee() {
     })
     .catch((error) => {
       if (error) {
-       console.log(error)
+        console.log(error);
       }
     });
 }
